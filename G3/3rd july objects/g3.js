@@ -1,7 +1,7 @@
 // let x=90;
 // let y="vikas patel";
 
-
+// "use strict"
 // let obj={
 //     name:"john wick",
 //     age:44,
@@ -25,43 +25,44 @@
 
 
 
-let person={
-    name:"john wick",
-    address:{
-        state:"UP",
-        localaddress:{
-            area:"rajpura",
-            hostel:"h2",
-            xyz:{
-                village:"jhansla",
-                age:40
-            }
-        }
-    },
-    movie:true
-}
+// let person={
+//     name:"john wick",
+//     address:{
+//         state:"UP",
+//         localaddress:{
+//             area:"rajpura",
+//             hostel:"h2",
+//             xyz:{
+//                 village:"jhansla",
+//                 age:40
+//             }
+//         }
+//     },
+//     movie:true
+// }
 
 // let ans=person.address.localaddress;
 // console.log(ans);
 
 
 
-// let obj={
-//     name:"john wick",
-//     age:44,
-//     address:"moscow",
-//     countrty:"russia",
-//     chapter5:false,
-//     college:undefined,
-//     display:function(){
-//         let x=78;
-//         console.log("john wick chapter 1");
-//         console.log(`hii ${this.name}`);
-//     }
-// };
+let obj={
+    name:"john wick",
+    age:44,
+    address:"moscow",
+    countrty:"russia",
+    chapter5:false,
+    college:undefined,
+    display:function (){
+        let x=78;
+        console.log("john wick chapter 1");
+        console.log(this);
+    }
+};
+obj.display();
 // let ans=obj.display;
-// console.log(ans);
 // ans();
+console.log(this);
 
 
 
@@ -106,9 +107,9 @@ let person={
 
 
 
-let arr=[23,56,67,2,5,67];
-// let neweArray=arr.slice(2,4);
+// let arr=[23,56,67,2,5,67];
+// // let neweArray=arr.slice(2,4);
 
-let neweArray=arr.splice(2,3,"vikas","g3",400);
-console.log(neweArray);
-console.log(arr);
+// let neweArray=arr.splice(2,3,"vikas","g3",400);
+// console.log(neweArray);
+// console.log(arr);
