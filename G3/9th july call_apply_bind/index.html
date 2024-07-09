@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" value="23"> -->
+     <div>
+        <p>para1</p>
+     </div>
+  <button>add para</button>
+   <!-- <h1>start</h1>  -->
+  <!-- <button onclick="xyz()">click me</button> -->
+  <!-- <button>click me</button> -->
+  <!-- <button>cme</button> -->
+
+
+
+  <script>
+    // let cnt=0;
+    // function xyz(){
+    //     console.log("hello");
+    //     cnt++;
+    //     document.getElementsByTagName("h1")[0].textContent=cnt;
+    // }
+    // let cnt=0;
+
+    // document.getElementsByTagName("button")[0]
+    // .addEventListener("click",(event)=>{
+    //     cnt++;
+    //     document.getElementsByTagName("h1")[0].innerHTML=cnt;
+//     })
+
+  document.getElementsByTagName("button")[0].addEventListener("click",(e)=>{
+    let ans=document.createElement("p");
+  console.log(ans);
+  ans.textContent="para2";
+
+
+//   document.getElementsByTagName("div")[0].appendChild(ans);
+//   document.getElementsByTagName("div")[0].prepend(ans);
+
+  })
+
+  
+   </script>
+
+
+   
+
+</body>
+</html>

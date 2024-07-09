@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>start</h1>
+    <button>increase  me</button>
+    <button>decrease me</button>
+
+    <script>
+        let cnt = 0;
+        document.getElementsByTagName("button")[0]
+            .addEventListener("click", (e) => {
+                cnt++;
+                document.getElementsByTagName("h1")[0].innerHTML = cnt;
+            })
+
+            document.getElementsByTagName("button")[1]
+            .addEventListener("click", (e) => {
+                if(cnt<=0){
+                      console.log("cnt is less ");
+                }
+                else{
+                    cnt--;
+                document.getElementsByTagName("h1")[0].innerHTML = cnt;
+                }
+                
+            })
+    </script>
+
+</body>
+
+</html>
