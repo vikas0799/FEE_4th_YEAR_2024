@@ -17,4 +17,6 @@ function asynchronousTask(callback) {
       });
     });
   });
-  
+  asynchronousTask(()=>{
+    console.log("hello");
+  })
