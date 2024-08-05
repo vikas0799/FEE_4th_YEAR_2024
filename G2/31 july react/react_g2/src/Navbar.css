@@ -1,0 +1,12 @@
+ul{
+    display: flex;
+    justify-content: flex-end;
+    background-color: bisque;
+    height: 70px;
+    align-items: center;
+}
+
+li{
+    padding: 10px;
+    list-style-type: none;
+}
